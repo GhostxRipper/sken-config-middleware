@@ -1,0 +1,15 @@
+{
+  "name": "sken-config-middleware",
+  "version": "1.0.0",
+  "description": "middleware for configuration of sken application",
+  "main": "index.js",
+  "repository": "git@github.com:GhostxRipper/sken-config-middleware.git",
+  "author": "Yann Amsellem <yann_ams@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.17.1"
+  },
+  "peerDependencies": {
+    "moment": "^2.17.1"
+  }
+}
