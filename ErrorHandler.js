@@ -15,7 +15,7 @@ class ErrorHandler {
 
   errorHandler (error, request, response, next) {
     if (error.message && error.message.match(/(unauthorized|forbidden)/i)) error.status = 403;
-    if (error.message && error.message.match(/(not found|notfound)/i)) error.status = 404;
+    if (error.message && error.message.match(/(not found|notfound|not match|notmatch)/i)) error.status = 404;
     response.status(error.status || error.statusCode || 500).json({ message: error.message });
   }
 
